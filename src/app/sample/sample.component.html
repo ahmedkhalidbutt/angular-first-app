@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12" [ngStyle]="{'text-align': 'center'}">
+      <div>
+        <button class="btn btn-success" (click)="handleClick($event)">+</button>
+        {{count}}
+        <button class="btn btn-danger" (click)="handleClick($event)">-</button>
+        <br><br>
+        <input class="form-control" [ngClass]="{'text-changed': inputCount > 0}" type="number" [(ngModel)]="inputCount">
+      </div>
+    </div>
+  </div>
+</div>
